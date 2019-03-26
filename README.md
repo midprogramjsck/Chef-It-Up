@@ -1,4 +1,3 @@
-# Chef-It-Up
 Group Project - README Template
 ===
 
