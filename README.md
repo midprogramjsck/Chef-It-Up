@@ -80,7 +80,7 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="file:///Users/Jay-son/Downloads/IMG_1022.html" width=600>
+<img src="http://g.recordit.co/T9HNEX3zvR.gif" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
