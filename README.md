@@ -92,35 +92,35 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 <img src="https://user-images.githubusercontent.com/46541210/55448231-fc6c7d80-5594-11e9-926d-75d0b0e7d82c.png" width=600>
 ### Networking
 
-Login Screen
-(Read/GET) Query user login credentials
-(Update/PUT) User credentials for forgotten password
-(Create/UPDATE) User sign up credentials 
+**Login Screen**
+* (Read/GET) Query user login credentials
+* (Update/PUT) User credentials for forgotten password
+* (Create/UPDATE) User sign up credentials 
 
-Home Feed Screen 
-(Read/GET) Query all posts 
-(Read/GET) Filter posts 
+**Home Feed Screen** 
+* (Read/GET) Query all posts 
+* (Read/GET) Filter posts 
 
-Create Recipe Screen
-(Create/POST) Creates new recipe
-(Update/PUT) Add a picture of a recipe
+**Create Recipe Screen**
+* (Create/POST) Creates new recipe
+* (Update/PUT) Add a picture of a recipe
 
-Recipe Screen
-(Read/GET) Get the recipe selected
-(Read/GET) Get reviews
-(Create/POST) Create a review
-(Create/POST) Create a new favorite on a post
-(Delete) Delete existing favorite on post
+**Recipe Screen**
+* (Read/GET) Get the recipe selected
+* (Read/GET) Get reviews
+* (Create/POST) Create a review
+* (Create/POST) Create a new favorite on a post
+* (Delete) Delete existing favorite on post
 
-Profile Screen
-(Read/GET) Query logged in user object
-(Update/PUT) Update user profile image
-(Create/POST) Create a biography
-(Update/PUT) Add recipes to favorite
+**Profile Screen**
+* (Read/GET) Query logged in user object
+* (Update/PUT) Update user profile image
+* (Create/POST) Create a biography
+* (Update/PUT) Add recipes to favorite
 
-Favorite Screen
-(Read/GET) Query favorited recipes
-(Delete) Delete existing favorited recipe
+**Favorite Screen**
+* (Read/GET) Query favorited recipes
+* (Delete) Delete existing favorited recipe
 
 
 - [Create basic snippets for each Parse network request]
