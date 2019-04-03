@@ -91,7 +91,8 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 ### Models
 <img src="https://user-images.githubusercontent.com/46541210/55448231-fc6c7d80-5594-11e9-926d-75d0b0e7d82c.png" width=600>
 ### Networking
-- Login Screen
+
+Login Screen
 (Read/GET) Query user login credentials
 (Update/PUT) User credentials for forgotten password
 (Create/UPDATE) User sign up credentials 
