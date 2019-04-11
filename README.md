@@ -28,20 +28,20 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 
 **Required Must-have Stories**
 
-* User can create a profile and sign-in
-* User can scroll through various cuisines and select the preferred recipe
-* User can save recipes to their profile that they favorite
-* User can filter cuisines
-* User can rate and leave reviews, as well as read reviews 
+[] User can create a profile and sign-in
+[] User can scroll through various cuisines and select the preferred recipe
+[] User can save recipes to their profile that they favorite
+[] User can filter cuisines
+[] User can rate and leave reviews, as well as read reviews 
 
 **Optional Nice-to-have Stories**
 
-* User can upload their own recipes that can be viewed on their profile
-* User can view a recipe of the day
-* Page of highest rated foods
-* History of previous recipes
-* Further filtering of cuisine to select a specific type of recipe
-* User can search for specific recipes
+[] User can upload their own recipes that can be viewed on their profile
+[] User can view a recipe of the day
+[] Page of highest rated foods
+[] History of previous recipes
+[] Further filtering of cuisine to select a specific type of recipe
+[] User can search for specific recipes
 
 ### 2. Screen Archetypes
 
