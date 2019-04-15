@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
                 configuration.applicationId = "ChefItUp"
-                configuration.server = "https://chef-it-up.herokuapp.com/"
+                configuration.server = "https://chef-it-up.herokuapp.com/parse"
             })
         )
         
