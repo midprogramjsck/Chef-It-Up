@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zmO-Ui-Q1h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -77,12 +77,37 @@
                     <connections>
                         <outlet property="passwordField" destination="KPF-90-di9" id="3ie-aa-gil"/>
                         <outlet property="usernameField" destination="aSd-Ug-gr9" id="dVB-Zq-mmv"/>
-                        <segue destination="zmO-Ui-Q1h" kind="presentation" identifier="LoginToHome" id="7nZ-bw-Wls"/>
+                        <segue destination="zmO-Ui-Q1h" kind="presentation" identifier="proceedToHome" id="wmA-l1-ZRq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143" y="133"/>
+            <point key="canvasLocation" x="966" y="-652"/>
+        </scene>
+        <!--Profile Page View Controller-->
+        <scene sceneID="Wo7-96-MtB">
+            <objects>
+                <viewController storyboardIdentifier="ProfilePage" id="PBv-EZ-yK5" customClass="ProfilePageViewController" customModule="Chef_It_Up" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QRG-cT-ZcX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.36914860840000002" green="0.74164478109999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="m8U-3c-bgO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sbk-Sj-v77">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="ZTe-xP-D5I">
+                            <connections>
+                                <action selector="logoutFromProfile:" destination="PBv-EZ-yK5" id="JpD-kM-HPZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="zmO-Ui-Q1h" kind="presentation" identifier="logoutSegue" id="vtu-pn-cFW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ye9-hB-DOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="-631"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="Y0X-Bu-E9t">
@@ -113,12 +138,20 @@
                                 <action selector="onLogoutButton:" destination="cgw-lQ-P3I" id="Zzc-XJ-Jra"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Profile" id="qNe-Ed-SKN"/>
+                        <barButtonItem key="rightBarButtonItem" title="Profile" id="qNe-Ed-SKN">
+                            <connections>
+                                <action selector="onProfileButton:" destination="cgw-lQ-P3I" id="U8V-fE-PKb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="noProfileFound" id="kW4-p8-fY9"/>
+                        <segue destination="Q7H-Qz-dzd" kind="presentation" identifier="profileFound" id="MX7-lf-jrC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQz-RP-2TB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1823" y="133"/>
+            <point key="canvasLocation" x="966" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2fK-f7-QMC">
@@ -134,10 +167,31 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yor-zN-nPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="133"/>
+            <point key="canvasLocation" x="76" y="126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Vg-fu-Rgx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q7H-Qz-dzd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jlk-tF-PAv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PBv-EZ-yK5" kind="relationship" relationship="rootViewController" id="zrh-xs-boR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D1f-pv-163" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="-631"/>
         </scene>
     </scenes>
     <resources>
         <image name="Untitled" width="320" height="240"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vtu-pn-cFW"/>
+    </inferredMetricsTieBreakers>
 </document>

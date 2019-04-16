@@ -12,6 +12,7 @@ import AlamofireImage
 
 class CuisineTableViewController: UITableViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,6 +35,13 @@ class CuisineTableViewController: UITableViewController {
         return 0
     }
 
+    @IBAction func onProfileButton(_ sender: Any) {
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
+            self.performSegue(withIdentifier: "profileFound", sender: nil)
+        } else if UserDefaults.standard.bool(forKey: "userLoggedIn") == false {
+            self.performSegue(withIdentifier: "noProfileFound", sender: nil)
+        }
+    }
     
     @IBAction func onLogoutButton(_ sender: Any) {
         PFUser.logOut()
