@@ -95,6 +95,11 @@
                         <viewLayoutGuide key="safeArea" id="m8U-3c-bgO"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sbk-Sj-v77">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="brT-kd-cT0">
+                            <connections>
+                                <action selector="profileToHome:" destination="PBv-EZ-yK5" id="uTk-cL-rsw"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="ZTe-xP-D5I">
                             <connections>
                                 <action selector="logoutFromProfile:" destination="PBv-EZ-yK5" id="JpD-kM-HPZ"/>

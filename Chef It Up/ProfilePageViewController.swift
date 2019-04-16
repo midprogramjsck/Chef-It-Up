@@ -30,7 +30,10 @@ class ProfilePageViewController: UIViewController {
     }
     
         
-        
+    @IBAction func profileToHome(_ sender: Any) {
+        self.performSegue(withIdentifier: "logoutSegue", sender: nil)
+    }
+    
         
         
         
