@@ -16,6 +16,7 @@
 		982CEE9D225D502600D3E886 /* Chef_It_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982CEE9C225D502600D3E886 /* Chef_It_UpTests.swift */; };
 		982CEEA8225D502600D3E886 /* Chef_It_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982CEEA7225D502600D3E886 /* Chef_It_UpUITests.swift */; };
 		987E66FE2263E494008F42EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E66FD2263E494008F42EC /* LoginViewController.swift */; };
+		98D586E222655DAF00D8B913 /* CuisineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D586E122655DAF00D8B913 /* CuisineTableViewController.swift */; };
 		B3537B6E7D64825D6FAE0880 /* Pods_Chef_It_UpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB33C802465218E3EFE524C4 /* Pods_Chef_It_UpUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		982CEEA7225D502600D3E886 /* Chef_It_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chef_It_UpUITests.swift; sourceTree = "<group>"; };
 		982CEEA9225D502600D3E886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		987E66FD2263E494008F42EC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		98D586E122655DAF00D8B913 /* CuisineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineTableViewController.swift; sourceTree = "<group>"; };
 		CC1F8A795414ECE1480C170D /* Pods-Chef It Up.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chef It Up.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chef It Up/Pods-Chef It Up.release.xcconfig"; sourceTree = "<group>"; };
 		EB33C802465218E3EFE524C4 /* Pods_Chef_It_UpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chef_It_UpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D55E3B17B1C4384A1FDD72 /* Pods-Chef It UpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chef It UpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chef It UpUITests/Pods-Chef It UpUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				982CEE90225D502500D3E886 /* LaunchScreen.storyboard */,
 				982CEE93225D502500D3E886 /* Info.plist */,
 				987E66FD2263E494008F42EC /* LoginViewController.swift */,
+				98D586E122655DAF00D8B913 /* CuisineTableViewController.swift */,
 			);
 			path = "Chef It Up";
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D586E222655DAF00D8B913 /* CuisineTableViewController.swift in Sources */,
 				987E66FE2263E494008F42EC /* LoginViewController.swift in Sources */,
 				982CEE88225D502100D3E886 /* AppDelegate.swift in Sources */,
 			);

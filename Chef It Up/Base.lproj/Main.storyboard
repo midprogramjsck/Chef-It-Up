@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Chef_It_Up" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Chef_It_Up" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,7 @@
         <!--Root View Controller-->
         <scene sceneID="Y0X-Bu-E9t">
             <objects>
-                <tableViewController id="cgw-lQ-P3I" customClass="Cuisine" sceneMemberID="viewController">
+                <tableViewController id="cgw-lQ-P3I" customClass="CuisineTableViewController" customModule="Chef_It_Up" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KVO-6U-Tby">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +107,14 @@
                             <outlet property="delegate" destination="cgw-lQ-P3I" id="cEb-sO-ZoL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="ook-dc-mO7"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="ook-dc-mO7">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="hne-Os-nTP">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="cgw-lQ-P3I" id="Zzc-XJ-Jra"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Profile" id="qNe-Ed-SKN"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQz-RP-2TB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,7 +123,7 @@
         <!--Navigation Controller-->
         <scene sceneID="2fK-f7-QMC">
             <objects>
-                <navigationController id="zmO-Ui-Q1h" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" id="zmO-Ui-Q1h" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r1g-f6-mxt">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
