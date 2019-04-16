@@ -29,6 +29,7 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 **Required Must-have Stories**
 
 - [x] User can create a profile and sign-in
+- [x] User can remain logged in and logout
 - [ ] User can scroll through various cuisines and select the preferred recipe
 - [ ] User can save recipes to their profile that they favorite
 - [ ] User can filter cuisines
