@@ -32,7 +32,6 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 - [x] User can remain logged in and logout
 - [ ] User can scroll through various cuisines and select the preferred recipe
 - [ ] User can save recipes to their profile that they favorite
-- [ ] User can filter cuisines
 - [ ] User can rate and leave reviews, as well as read reviews 
 
 **Optional Nice-to-have Stories**
@@ -41,6 +40,7 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 - [ ] User can view a recipe of the day
 - [ ] Page of highest rated foods
 - [ ] History of previous recipes
+- [ ] User can filter cuisines
 - [ ] Further filtering of cuisine to select a specific type of recipe
 - [ ] User can search for specific recipes
 
