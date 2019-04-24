@@ -19,6 +19,7 @@
 		987E66FE2263E494008F42EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E66FD2263E494008F42EC /* LoginViewController.swift */; };
 		98D586E222655DAF00D8B913 /* CuisineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D586E122655DAF00D8B913 /* CuisineTableViewController.swift */; };
 		B3537B6E7D64825D6FAE0880 /* Pods_Chef_It_UpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB33C802465218E3EFE524C4 /* Pods_Chef_It_UpUITests.framework */; };
+		EC968F99226EDAB000C6C84A /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC968F98226EDAB000C6C84A /* RecipeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		98D586E122655DAF00D8B913 /* CuisineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineTableViewController.swift; sourceTree = "<group>"; };
 		CC1F8A795414ECE1480C170D /* Pods-Chef It Up.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chef It Up.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chef It Up/Pods-Chef It Up.release.xcconfig"; sourceTree = "<group>"; };
 		EB33C802465218E3EFE524C4 /* Pods_Chef_It_UpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chef_It_UpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC968F98226EDAB000C6C84A /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		F8D55E3B17B1C4384A1FDD72 /* Pods-Chef It UpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chef It UpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chef It UpUITests/Pods-Chef It UpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 				987E66FD2263E494008F42EC /* LoginViewController.swift */,
 				98D586E122655DAF00D8B913 /* CuisineTableViewController.swift */,
 				9821895522664CF6006CBE66 /* ProfilePageViewController.swift */,
+				EC968F98226EDAB000C6C84A /* RecipeTableViewCell.swift */,
 			);
 			path = "Chef It Up";
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98D586E222655DAF00D8B913 /* CuisineTableViewController.swift in Sources */,
+				EC968F99226EDAB000C6C84A /* RecipeTableViewCell.swift in Sources */,
 				987E66FE2263E494008F42EC /* LoginViewController.swift in Sources */,
 				982CEE88225D502100D3E886 /* AppDelegate.swift in Sources */,
 				9821895622664CF6006CBE66 /* ProfilePageViewController.swift in Sources */,
