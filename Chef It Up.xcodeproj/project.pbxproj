@@ -11,6 +11,7 @@
 		8E4606B7C4259EDA4F876EE2 /* Pods_Chef_It_UpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230FA4FE38C82B4F543D47E3 /* Pods_Chef_It_UpTests.framework */; };
 		980FE6CB2272635E00F87EA2 /* RecipieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FE6CA2272635E00F87EA2 /* RecipieViewController.swift */; };
 		980FE6CD22727C8B00F87EA2 /* FavoriteRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FE6CC22727C8B00F87EA2 /* FavoriteRecipeViewController.swift */; };
+		980FE6CF22728F0400F87EA2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FE6CE22728F0400F87EA2 /* DetailsViewController.swift */; };
 		9821895622664CF6006CBE66 /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9821895522664CF6006CBE66 /* ProfilePageViewController.swift */; };
 		982CEE88225D502100D3E886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982CEE87225D502100D3E886 /* AppDelegate.swift */; };
 		982CEE8D225D502100D3E886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982CEE8B225D502100D3E886 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		96B65AA8709739563BD7519B /* Pods-Chef It UpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chef It UpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chef It UpTests/Pods-Chef It UpTests.release.xcconfig"; sourceTree = "<group>"; };
 		980FE6CA2272635E00F87EA2 /* RecipieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipieViewController.swift; sourceTree = "<group>"; };
 		980FE6CC22727C8B00F87EA2 /* FavoriteRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecipeViewController.swift; sourceTree = "<group>"; };
+		980FE6CE22728F0400F87EA2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		9821895522664CF6006CBE66 /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
 		982CEE84225D502100D3E886 /* Chef It Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chef It Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		982CEE87225D502100D3E886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				EC968F98226EDAB000C6C84A /* RecipeTableViewCell.swift */,
 				980FE6CA2272635E00F87EA2 /* RecipieViewController.swift */,
 				980FE6CC22727C8B00F87EA2 /* FavoriteRecipeViewController.swift */,
+				980FE6CE22728F0400F87EA2 /* DetailsViewController.swift */,
 			);
 			path = "Chef It Up";
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				98D586E222655DAF00D8B913 /* CuisineTableViewController.swift in Sources */,
 				EC968F99226EDAB000C6C84A /* RecipeTableViewCell.swift in Sources */,
 				987E66FE2263E494008F42EC /* LoginViewController.swift in Sources */,
+				980FE6CF22728F0400F87EA2 /* DetailsViewController.swift in Sources */,
 				982CEE88225D502100D3E886 /* AppDelegate.swift in Sources */,
 				980FE6CB2272635E00F87EA2 /* RecipieViewController.swift in Sources */,
 				980FE6CD22727C8B00F87EA2 /* FavoriteRecipeViewController.swift in Sources */,

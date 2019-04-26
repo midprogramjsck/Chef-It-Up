@@ -254,16 +254,49 @@
             </objects>
             <point key="canvasLocation" x="965.60000000000002" y="124.58770614692655"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="D5N-b4-6ml">
             <objects>
-                <viewController id="ZKc-Yi-aGB" sceneMemberID="viewController">
+                <viewController id="ZKc-Yi-aGB" customClass="DetailsViewController" customModule="Chef_It_Up" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UMX-pj-HBF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mLK-Hc-uWc">
+                                <rect key="frame" x="67" y="92" width="240" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="wj5-mK-AsX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqC-kV-xlL">
+                                <rect key="frame" x="154" y="46" width="67" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsT-EG-crA">
+                                <rect key="frame" x="164" y="262" width="47" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bsT-EG-crA" firstAttribute="top" secondItem="mLK-Hc-uWc" secondAttribute="bottom" constant="20" id="1vu-Xh-Cqy"/>
+                            <constraint firstItem="mLK-Hc-uWc" firstAttribute="centerX" secondItem="UMX-pj-HBF" secondAttribute="centerX" id="55T-bq-Hwf"/>
+                            <constraint firstItem="qqC-kV-xlL" firstAttribute="centerX" secondItem="UMX-pj-HBF" secondAttribute="centerX" id="OOk-ab-B4x"/>
+                            <constraint firstItem="mLK-Hc-uWc" firstAttribute="top" secondItem="qqC-kV-xlL" secondAttribute="bottom" constant="10" id="dTd-ZS-t8J"/>
+                            <constraint firstItem="bsT-EG-crA" firstAttribute="centerX" secondItem="UMX-pj-HBF" secondAttribute="centerX" id="kAH-sE-YWJ"/>
+                            <constraint firstItem="mLK-Hc-uWc" firstAttribute="centerY" secondItem="UMX-pj-HBF" secondAttribute="centerY" multiplier="3:6" id="mNN-OO-LxY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="T1k-9u-LMI"/>
                     </view>
+                    <connections>
+                        <outlet property="ingredients" destination="bsT-EG-crA" id="YCg-5e-f5g"/>
+                        <outlet property="rImage" destination="mLK-Hc-uWc" id="RP7-Rz-ooR"/>
+                        <outlet property="rTitle" destination="qqC-kV-xlL" id="zCR-jT-kVR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Exk-mn-xrP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -331,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMS-Ha-Nz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5390" y="-631"/>
+            <point key="canvasLocation" x="4145" y="-1343"/>
         </scene>
         <!--Favorite Recipe View Controller-->
         <scene sceneID="E3p-Xn-05b">
