@@ -98,7 +98,6 @@ class RecipieViewController: UIViewController, UITableViewDataSource {
         if let indexPath = recipieTableView.indexPath(for: cell) {
             let recipe = recipes[indexPath.row]
             let vc = segue.destination as! DetailsViewController
-            vc.recipe
             
         }
     }
