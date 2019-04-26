@@ -30,7 +30,7 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 
 - [x] User can create a profile and sign-in
 - [x] User can remain logged in and logout
-- [ ] User can scroll through various cuisines and select the preferred recipe
+- [x] User can scroll through various recipes and select the preferred recipe
 - [ ] User can save recipes to their profile that they favorite
 - [ ] User can rate and leave reviews, as well as read reviews 
 
@@ -122,6 +122,11 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 **Favorite Screen**
 * (Read/GET) Query favorited recipes
 * (Delete) Delete existing favorited recipe
+
+
+## Milestone GIF Walkthrough
+<img src="http://g.recordit.co/6Hd5e3XrPu.gif" width=200>
+
 
 
 
