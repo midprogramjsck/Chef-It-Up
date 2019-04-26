@@ -41,7 +41,8 @@ class LoginViewController: UIViewController {
         let user = PFUser()
         user.username = usernameField.text!
         user.password = passwordField.text!
-        
+        let favArray: [String] = []
+        user.add(favArray, forKey: "favorites")
         
         user.signUpInBackground { (success, error) in
             if success {

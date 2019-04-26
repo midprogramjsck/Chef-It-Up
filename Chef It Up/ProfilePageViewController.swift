@@ -35,7 +35,10 @@ class ProfilePageViewController: UIViewController {
     }
     
         
-        
+    @IBAction func toFavorites(_ sender: Any) {
+        self.performSegue(withIdentifier: "toFavorite", sender: nil)
+    }
+    
         
         
     }

@@ -1,26 +1,28 @@
 //
-//  CuisineTableViewController.swift
+//  RecipieViewController.swift
 //  Chef It Up
 //
-//  Created by Jay-son Alburg on 4/15/19.
+//  Created by Jay-son Alburg on 4/25/19.
 //  Copyright © 2019 Jay'son Alburg. All rights reserved.
 //
-
 import UIKit
 import Parse
 import AlamofireImage
 
-class CuisineTableViewController: UITableViewController {
+class RecipieViewController: UIViewController, UITableViewDataSource {
+    
+    @IBOutlet weak var recipieTableView: UITableView!
     
     var recipes: [[String:Any]] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
+        recipieTableView.dataSource = self
         getRecipies()
-        tableView.reloadData()
-    
+        recipieTableView.reloadData()
+        recipieTableView.estimatedRowHeight = 200
+        recipieTableView.rowHeight = UITableView.automaticDimension
+
+        // Do any additional setup after loading the view.
     }
     
     func getRecipies() {
@@ -34,19 +36,44 @@ class CuisineTableViewController: UITableViewController {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 let dataDict = dataDictionary["recipes"] as! [[String:Any]]
                 self.recipes = dataDict
-                let one = dataDict[0] as! [String:Any]
+                let one = dataDict[0]
                 let two = one["title"] as! String
                 print(two)
-                self.tableView.reloadData()
+                self.recipieTableView.reloadData()
             }
         }
         task.resume()
     }
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipes.count
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeTableViewCell", for: indexPath) as! RecipeTableViewCell
+        
+        let recipe = recipes[indexPath.row]
+        let title = recipe["title"] as! String
+        let id = recipe["recipe_id"] as! String
 
+        let imageURL = recipe["image_url"] as! String
+        
+        cell.titleLabel.text = title
+        cell.id = id
+        
+        let posterUrl = URL(string: imageURL)
+        var image = UIImage()
+        
+        cell.posterView.af_setImage(withURL: posterUrl!)
+        //cell.posterView.image = image
+        
+        return cell
+    }
+    
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+    }
+    
     @IBAction func onProfileButton(_ sender: Any) {
         if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
             self.performSegue(withIdentifier: "profileFound", sender: nil)
@@ -66,21 +93,21 @@ class CuisineTableViewController: UITableViewController {
         delegate.window?.rootViewController = loginViewController
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeTableViewCell", for: indexPath) as! RecipeTableViewCell
-        
-        let recipe = recipes[indexPath.row]
-        let title = recipe["title"] as! String
-        let ingredients = recipe["image_url"] as! String
     
-        cell.titleLabel.text = title
-        
-        let baseUrl = "https://www.food2fork.com/api/search?key=2ffae2ced18c0207078d5f05bf64ef42"
-        let posterPath = recipe["image_url"] as! String
-        let posterUrl = URL(string: baseUrl + posterPath)
-        
-        //cell.posterView.af_setImage(withURL: posterUrl!)
     
-        return cell
+    
+    
+    
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
+    */
+
 }
