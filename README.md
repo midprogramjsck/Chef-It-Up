@@ -14,7 +14,6 @@ Group Project - README Template
 User will be able to obtain various cuisine recipes by selecting filters based on their preference at the given time.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Food
 - **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as other similar apps. Functionality wouldn’t be limited to mobile devices, however mobile version could potentially have more features.
 - **Story:** Selection of various cuisine recipes, along with the option of filtering the selections to narrow down searches.
@@ -49,8 +48,6 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 * Login
 * Register
     * Upon reopening the app, user remains logged in until signing out directly
-* Cuisine Screen - User can view various cuisines
-    * Upon selecting cuisine, user can view recipes
 * Profile Screen
     * User can upload profile picture, select preferences and view their favorite recipes 
 * Recipe Screen
@@ -61,9 +58,11 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 
 **Tab Navigation** (Tab to Screen)
 
-* Cuisine Selection
 * Recipe List
+* Recipe Instructions
 * Profile
+* Favorites
+* Sign In/Up
 
 **Optional**
 
@@ -74,10 +73,10 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 
 **Flow Navigation** (Screen to Screen)
 
-* Forced Log-in -> Account creation if no log in is available
-* Cuisine Selection -> Jumps to recipe list
+* Recipe Selection -> Displays recipe directions and picture 
+* Login/Sign up -> Sign up if new, login if already existing (remains logged in until logout)
 * Profile -> Text field to be modified
-* Recipe Selection -> Displays recipe directions and picture
+* Favorites -> Favorite recipes
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
