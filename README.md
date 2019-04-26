@@ -40,7 +40,7 @@ User will be able to obtain various cuisine recipes by selecting filters based o
 - [ ] User can view a recipe of the day
 - [ ] Page of highest rated foods
 - [ ] History of previous recipes
-- [ ] User can filter cuisines
+- [ ] User can filter by cuisines
 - [ ] Further filtering of cuisine to select a specific type of recipe
 - [ ] User can search for specific recipes
 
