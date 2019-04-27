@@ -92,9 +92,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chef-512" translatesAutoresizingMaskIntoConstraints="NO" id="9C5-m2-QUO">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chef-512" translatesAutoresizingMaskIntoConstraints="NO" id="9C5-m2-QUO">
                                 <rect key="frame" x="16" y="92" width="136" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QMn-L4-l1L" appends="YES" id="QmQ-sQ-9Dn"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y97-Hk-Yd6">
                                 <rect key="frame" x="172" y="87" width="78" height="21"/>
@@ -151,11 +155,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="profilePicture" destination="9C5-m2-QUO" id="DVv-Up-jo6"/>
                         <segue destination="zmO-Ui-Q1h" kind="presentation" identifier="logoutSegue" id="vtu-pn-cFW"/>
                         <segue destination="HZf-wv-FTV" kind="show" identifier="toFavorite" id="KiS-gB-bjT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ye9-hB-DOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QMn-L4-l1L">
+                    <connections>
+                        <action selector="onCameraButton:" destination="PBv-EZ-yK5" id="SdY-qO-cLo"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3016.8000000000002" y="-631.0344827586207"/>
         </scene>
@@ -262,8 +272,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mLK-Hc-uWc">
-                                <rect key="frame" x="67" y="92" width="240" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mLK-Hc-uWc">
+                                <rect key="frame" x="67" y="92" width="241" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="wj5-mK-AsX"/>
                                 </constraints>
@@ -284,6 +294,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bsT-EG-crA" firstAttribute="top" secondItem="mLK-Hc-uWc" secondAttribute="bottom" constant="20" id="1vu-Xh-Cqy"/>
+                            <constraint firstItem="mLK-Hc-uWc" firstAttribute="leading" secondItem="T1k-9u-LMI" secondAttribute="leading" constant="67" id="2ke-4x-iRO"/>
                             <constraint firstItem="mLK-Hc-uWc" firstAttribute="centerX" secondItem="UMX-pj-HBF" secondAttribute="centerX" id="55T-bq-Hwf"/>
                             <constraint firstItem="qqC-kV-xlL" firstAttribute="centerX" secondItem="UMX-pj-HBF" secondAttribute="centerX" id="OOk-ab-B4x"/>
                             <constraint firstItem="mLK-Hc-uWc" firstAttribute="top" secondItem="qqC-kV-xlL" secondAttribute="bottom" constant="10" id="dTd-ZS-t8J"/>

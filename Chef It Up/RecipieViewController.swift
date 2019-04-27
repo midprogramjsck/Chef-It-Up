@@ -93,13 +93,13 @@ class RecipieViewController: UIViewController, UITableViewDataSource {
         delegate.window?.rootViewController = loginViewController
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let cell = sender as! UITableViewCell
-        if let indexPath = recipieTableView.indexPath(for: cell) {
-            let recipe = recipes[indexPath.row]
-            let vc = segue.destination as! DetailsViewController
-            
-        }
-    }
+////    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+////        let cell = sender as! UITableViewCell
+////        if let indexPath = recipieTableView.indexPath(for: cell) {
+////            let recipe = recipes[indexPath.row]
+////            let vc = segue.destination as! DetailsViewController
+//            
+//        }
+//    }
     
 }
